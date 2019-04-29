@@ -4,11 +4,14 @@ import './index.css';
 import Button from './Button';
 import Menu from './Menu';
 import * as serviceWorker from './serviceWorker';
-
-ReactDOM.render(<Button name="Save" />, document.getElementById('button'));
+import AppHeader from "./AppHeader";
 
 // Put the thing into the DOM!
+ReactDOM.render(React.createElement(AppHeader), document.getElementById('appHeader'));
+
 ReactDOM.render(React.createElement(Menu), document.getElementById('menu'));
+
+ReactDOM.render(<Button name="Save" />, document.getElementById('button'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
