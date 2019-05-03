@@ -5,9 +5,12 @@ import Button from './Button';
 import Menu from './Menu';
 import * as serviceWorker from './serviceWorker';
 import AppHeader from "./AppHeader";
+import AppMain from "./AppMain";
 
 // Put the thing into the DOM!
 ReactDOM.render(React.createElement(AppHeader), document.getElementById('appHeader'));
+
+ReactDOM.render(React.createElement(AppMain), document.getElementById('appMain'));
 
 ReactDOM.render(React.createElement(Menu), document.getElementById('menu'));
 
